@@ -11,7 +11,4 @@ Compile and run `.cs` file.
 `./install.sh`
 
 ## Dependency
-* `sh`
-* `sudo`
-* `echo`
-* `mono`
+* `Mono`

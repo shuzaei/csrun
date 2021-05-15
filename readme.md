@@ -4,10 +4,11 @@
 Compile and run `.cs` file.
 
 ## Usage
-`csrun filename`
+* `csrun filename` : Compile and run `.cs` file.
+* `csdb filename` : Compile and debug `.cs` file.
 
 ## Installation
-`./install`
+`./install.sh`
 
 ## Dependency
 * `sh`

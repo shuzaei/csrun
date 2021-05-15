@@ -3,7 +3,7 @@ then
     echo "Usage: csdb filename"
     exit 1
 else
-    echo "csdb: \e[34mcompile\e[0m $1.cs"
+    echo -e "csdb: \e[34mcompile\e[0m $1.cs"
     message=`mcs -debug "$1.cs" -out:"$1" 2>&1`
     result=$?
 
@@ -16,10 +16,10 @@ else
             echo "csdb: mcs: $line"
         done
         echo ""
-        echo "csdb: \e[31mcompile failed\e[0m"
+        echo -e "csdb: \e[31mcompile failed\e[0m"
     else
-        echo "csdb: \e[32mcompile success\e[0m"
-        echo "csdb: \e[34mdebug\e[0m $1"
+        echo -e "csdb: \e[32mcompile success\e[0m"
+        echo -e "csdb: \e[34mdebug\e[0m $1"
         mono --debug $1
     fi
 fi

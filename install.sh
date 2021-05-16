@@ -12,5 +12,5 @@ sudo cp csdb /usr/local/bin/
 cd ..
 echo "Cleaning ..."
 rm csrun-main.tar.gz
-rm -Rf csrun-main
+rm -r csrun-main
 echo -e "\e[32mInstallation Compreted\e[0m"

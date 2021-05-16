@@ -11,4 +11,4 @@ Compile and run `.cs` files.
 Download [install.sh](https://github.com/shuzaei/csrun/releases/latest/download/install.sh) and do `chmod +x install.sh && ./install.sh`
 
 ## Dependency
-* `Mono`
+* Mono

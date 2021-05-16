@@ -1,7 +1,7 @@
 cd `dirname $0`
-echo "Unnstalling csrun ..."
+printf "Unnstalling csrun ...\n"
 sudo rm /usr/local/bin/csrun.sh 
 sudo rm /usr/local/bin/csrun
 sudo rm /usr/local/bin/csdb.sh
 sudo rm /usr/local/bin/csdb
-echo -e "\e[32mUninstallation Compreted\e[0m"
+printf "\033[32mUninstallation Compreted\033[0m\n"

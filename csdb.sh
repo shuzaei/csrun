@@ -1,25 +1,25 @@
 if [ $# -ne 1 ]
 then
-    echo "Usage: csdb filename"
+    printf "Usage: csdb filename\n"
     exit 1
 else
-    echo -e "csdb: \e[34mcompile\e[0m $1.cs"
+    printf "csdb: \033[34mcompile\033[0m $1.cs"
     message=`mcs -debug "$1.cs" -out:"$1" 2>&1`
     result=$?
 
     if [ $result -ne 0 ]
     then
-        echo ""
+        printf "\n"
         IFS=$'\n'
         for line in $message
         do
-            echo "csdb: mcs: $line"
+            printf "csdb: mcs: $line\n"
         done
-        echo ""
-        echo -e "csdb: \e[31mcompile failed\e[0m"
+        printf "\n"
+        printf "csdb: \033[31mcompile failed\033[0m"
     else
-        echo -e "csdb: \e[32mcompile success\e[0m"
-        echo -e "csdb: \e[34mdebug\e[0m $1"
+        printf "csdb: \033[32mcompile success\033[0m\n"
+        printf "csdb: \033[34mdebug\033[0m $1\n"
         mono --debug $1
     fi
 fi

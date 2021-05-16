@@ -8,7 +8,7 @@ Compile and run `.cs` files.
 * `csdb filename` : Compile and debug the `$filename.cs` file.
 
 ## Installation
-`./install.sh`
+Download [install.sh](https://github.com/shuzaei/csrun/releases/latest/download/install.sh) and do `chmod +x install.sh && ./install.sh`
 
 ## Dependency
 * `Mono`

@@ -1,6 +1,6 @@
 if [ $# -ne 1 ]
 then
-    printf "Usage: csrun filename\n"
+    printf "Usage: csrun <file>\n"
     exit 1
 else
     printf "csdb: \033[34mcompile\033[0m $1.cs\n"
